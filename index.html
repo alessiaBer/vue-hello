@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body :class="{bg_changed: is_bg_changed}">
     
     <div id="app">
+        <button @click="changeBackground">Click me</button>
+
         <div class="container">
             <h1>{{ hello }}</h1>
             <div :class="divClassName">
@@ -20,6 +22,7 @@
                 <img :src="vueLogo">
                 {{ vueJs }}
             </div>
+            
         </div>
     </div>
 
