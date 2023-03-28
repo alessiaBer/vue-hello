@@ -5,12 +5,18 @@ Bonus:
 Aggiungere alla pagina un’immagine, presa anch’essa da un data.
 */
 
-const { createApp } = Vue
+const { createApp } = Vue;
 
 createApp({
     data() {
         return {
-            message: 'Hello Vue!'
+            message: 'Hello I\'m Alessia and I just started to use VueJs',
+        }
+    },
+    methods: {
+        printMessage() {
+            const h1 = this.createElement('h1');
+            h1.innerHTML = `{{ message }}`;
         }
     }
-}).mount('#app')
+}).mount('#app');
