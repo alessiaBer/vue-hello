@@ -10,13 +10,12 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: 'Hello I\'m Alessia and I just started to use VueJs',
+            hello: 'Hello, I\'m Alessia',
+            message: 'I just started to use',
+            divClassName: 'span',
+            vueLogo: 'https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg',
+            vueJs: 'Vue.js'
         }
     },
-    methods: {
-        printMessage() {
-            const h1 = this.createElement('h1');
-            h1.innerHTML = `{{ message }}`;
-        }
-    }
+    methods: {}
 }).mount('#app');

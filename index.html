@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Vue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
     <div id="app">
-        <h1>{{ message }}</h1>
+        <div class="container">
+            <h1>{{ hello }}</h1>
+            <div :class="divClassName">
+                {{ message }} 
+                <img :src="vueLogo">
+                {{ vueJs }}
+            </div>
+        </div>
     </div>
 
 
