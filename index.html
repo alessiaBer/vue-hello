@@ -16,7 +16,7 @@
         <div :class="{bg_changed: is_bg_changed}" class="container">
             <button @click="changeBackground">Click me</button> 
             <h1>{{ hello }}</h1>
-            <div :class="divClassName">
+            <div class="span" :class="{changed: is_bg_changed}">
                 {{ message }} 
                 <img :src="vueLogo">
                 {{ vueJs }}

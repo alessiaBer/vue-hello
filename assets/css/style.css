@@ -12,14 +12,15 @@ body {
 .container {
     height: 100vh;
     background: rgb(53,80,94);
-    background: linear-gradient(225deg, rgba(53,80,94,1) 0%, rgba(65,138,118,1) 100%);
+    background: linear-gradient(225deg, rgba(53,80,94,1) 50%, rgba(65,138,118,1) 100%);
     padding: 5rem 0;
 }
 
 .bg_changed {
     background: rgb(53,80,94);
-    background: linear-gradient(180deg, rgba(53,80,94,1) 0%, rgba(65,138,118,1) 100%);
+    background: linear-gradient(45deg, rgba(53,80,94,1) 0%, rgba(65,138,118,1) 50%);
 }
+
 h1 {
     color: #fff;
     font-size: 3rem;
@@ -46,6 +47,10 @@ button {
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
+}
+
+.span.changed {
+    color: rgb(43, 66, 78);
 }
 
 img {

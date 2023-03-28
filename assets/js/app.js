@@ -12,7 +12,6 @@ createApp({
         return {
             hello: 'Hi, I\'m Alessia',
             message: 'I just started to use',
-            divClassName: 'span',
             vueLogo: 'https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg',
             vueJs: 'Vue.js',
             is_bg_changed: false
